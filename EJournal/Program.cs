@@ -30,9 +30,10 @@ builder.Services.AddScoped<IStudentRepository, StudentRepository>();
 builder.Services.AddScoped<IGroupRepository, GroupRepository>();
 builder.Services.AddScoped<ISubjectRepository, SubjectRepository>();
 builder.Services.AddScoped<IGroupSubjectRepository, GroupSubjectRepository>();
+builder.Services.AddScoped<IJournalRepository, JournalRepository>();
 
 // Сервисы
-builder.Services.AddScoped<IJournalService, JournalService>();
+builder.Services.AddScoped<JournalService>();
 
 var app = builder.Build();
 

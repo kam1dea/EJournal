@@ -1,6 +1,5 @@
 using EJournal.DTOs.Student;
 using EJournal.Entities;
-using StudentJournalDto = EJournal.DTOs.StudentJournalDto;
 
 namespace EJournal.Interfaces;
 

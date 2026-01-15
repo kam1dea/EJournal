@@ -3,7 +3,6 @@ using EJournal.DTOs.Student;
 using EJournal.Entities;
 using EJournal.Interfaces;
 using Microsoft.EntityFrameworkCore;
-using StudentJournalDto = EJournal.DTOs.StudentJournalDto;
 
 namespace EJournal.Repositories;
 
