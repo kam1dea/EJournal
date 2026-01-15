@@ -26,6 +26,10 @@ builder.Services.AddSwaggerGen();
 
 // Репозитории
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+builder.Services.AddScoped<IStudentRepository, StudentRepository>();
+builder.Services.AddScoped<IGroupRepository, GroupRepository>();
+builder.Services.AddScoped<ISubjectRepository, SubjectRepository>();
+builder.Services.AddScoped<IGroupSubjectRepository, GroupSubjectRepository>();
 
 // Сервисы
 builder.Services.AddScoped<IJournalService, JournalService>();
